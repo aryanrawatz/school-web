@@ -1,0 +1,117 @@
+*{
+box-sizing:border-box;
+}
+
+.about-hero{
+height:60vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#0284c7,#0ea5e9);
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:65px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+}
+
+.story{
+padding:100px 10%;
+background:white;
+text-align:center;
+}
+
+.story h2{
+font-size:50px;
+color:#0f172a;
+margin-bottom:30px;
+}
+
+.story p{
+font-size:20px;
+line-height:40px;
+color:#475569;
+max-width:1000px;
+margin:auto;
+}
+
+.mission-vision{
+padding:100px 10%;
+display:flex;
+gap:40px;
+justify-content:center;
+background:#f8fafc;
+}
+
+.card{
+background:white;
+padding:50px;
+border-radius:25px;
+width:450px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h2{
+color:#0284c7;
+margin-bottom:20px;
+}
+
+.card p{
+font-size:18px;
+line-height:30px;
+}
+
+.achievement-section{
+padding:100px 10%;
+display:flex;
+justify-content:center;
+gap:30px;
+background:white;
+}
+
+.achievement-card{
+width:280px;
+padding:50px;
+background:#0284c7;
+color:white;
+text-align:center;
+border-radius:20px;
+}
+
+.achievement-card h1{
+font-size:55px;
+}
+
+.about-cta{
+padding:120px 10%;
+text-align:center;
+background:#0f172a;
+color:white;
+}
+
+.about-cta h1{
+font-size:55px;
+margin-bottom:40px;
+}
+
+.about-cta button{
+padding:18px 40px;
+border:none;
+background:#0ea5e9;
+color:white;
+font-size:18px;
+border-radius:15px;
+cursor:pointer;
+}

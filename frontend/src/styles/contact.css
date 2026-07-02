@@ -1,0 +1,56 @@
+.contact-page{
+display:flex;
+justify-content:space-between;
+padding:100px 10%;
+gap:50px;
+background:#f8fafc;
+}
+
+.contact-info{
+width:40%;
+}
+
+.contact-info h1{
+font-size:55px;
+color:#0284c7;
+margin-bottom:40px;
+}
+
+.info-card{
+background:white;
+padding:25px;
+margin-bottom:20px;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.contact-form{
+width:50%;
+background:white;
+padding:40px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+input,textarea{
+padding:18px;
+border:1px solid #ddd;
+border-radius:12px;
+font-size:16px;
+}
+
+button{
+padding:18px;
+background:#0284c7;
+color:white;
+border:none;
+border-radius:12px;
+font-size:18px;
+cursor:pointer;
+}

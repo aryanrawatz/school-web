@@ -1,0 +1,13 @@
+.stat-card{
+background:white;
+padding:40px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+transition:60 sec;
+cursor:pointer;
+}
+
+.stat-card:hover{
+transform:translateY();
+box-shadow:0 20px 40px rgba(0,0,0,.0);
+}

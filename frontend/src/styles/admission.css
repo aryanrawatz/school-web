@@ -1,0 +1,56 @@
+.admission{
+display:flex;
+justify-content:space-around;
+padding:100px 10%;
+gap:50px;
+}
+
+.admission-left{
+width:40%;
+}
+
+.admission-left h1{
+font-size:55px;
+color:#0284c7;
+}
+
+.admission-left p{
+line-height:35px;
+color:gray;
+}
+
+.admission-left li{
+line-height:40px;
+font-size:18px;
+}
+
+.admission-right{
+width:50%;
+background:white;
+padding:40px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+input,textarea{
+padding:18px;
+border:1px solid #ddd;
+border-radius:12px;
+font-size:16px;
+}
+
+button{
+padding:18px;
+background:#0284c7;
+color:white;
+border:none;
+border-radius:12px;
+font-size:18px;
+cursor:pointer;
+}
