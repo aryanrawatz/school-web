@@ -11,7 +11,7 @@ function AdminMessages() {
   const fetchContacts = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/contact"
+       "https://school-web-q821.onrender.com/api/contact"
       );
 
       setContacts(res.data.data);
