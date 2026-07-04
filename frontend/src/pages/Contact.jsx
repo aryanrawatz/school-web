@@ -26,10 +26,13 @@ function Contact() {
       setLoading(true);
 
       const response = await axios.post(
-  `${process.env.REACT_APP_API_URL}/contact`,
-  formData
-);
+        "https://school-web-q821.onrender.com/api/contact",
+        formData
+      );
+
       alert("Message Sent Successfully ✅");
+
+      console.log(response.data);
 
       setFormData({
         name: "",
@@ -37,11 +40,14 @@ function Contact() {
         phone: "",
         message: "",
       });
-
-      console.log(response.data);
     } catch (error) {
-      console.log(error);
-      alert("Something went wrong ❌");
+      console.error(error);
+
+      if (error.response) {
+        alert(`Error: ${error.response.status} - ${error.response.data.message || "Something went wrong"}`);
+      } else {
+        alert("Server not responding ❌");
+      }
     } finally {
       setLoading(false);
     }
@@ -49,7 +55,6 @@ function Contact() {
 
   return (
     <div className="contact-page">
-
       <div className="contact-info">
         <h1>Get In Touch</h1>
 
@@ -73,7 +78,6 @@ function Contact() {
         <h2>Send Message</h2>
 
         <form onSubmit={handleSubmit}>
-
           <input
             type="text"
             name="name"
@@ -107,12 +111,11 @@ function Contact() {
             value={formData.message}
             onChange={handleChange}
             required
-          ></textarea>
+          />
 
-          <button type="submit">
+          <button type="submit" disabled={loading}>
             {loading ? "Sending..." : "Send Message"}
           </button>
-
         </form>
       </div>
     </div>
