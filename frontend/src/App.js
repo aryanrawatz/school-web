@@ -45,7 +45,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/admission" element={<Admission />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/admin-messages" element={<AdminMessages />} />
+         <Route path="/admin/messages" element={<AdminMessages />} />
         </Routes>
 
         <ScrollToTopButton />
